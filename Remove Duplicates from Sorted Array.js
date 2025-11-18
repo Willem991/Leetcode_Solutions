@@ -1,19 +1,19 @@
 nums = [1,1,2]
 
-var removeDuplicates = function(x) {
+var removeDuplicates = function(nums) {
     
     let result = []
 
-    for (let i = 0; i < x.length; i++) {
+    for (let i = 0; i < nums.length; i++) {
         
-        if(x[i] !== x[i+1]){
-            result.push(x[i])
+        if(nums[i] !== nums[i+1]){
+            result.push(nums[i])
         }
         
     }
 
-    l = x.length - result.length
-    L = x.length
+    l = nums.length - result.length
+    L = nums.length
 
     for (let l = 0; l < L; l++) {
 
